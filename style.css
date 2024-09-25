@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #776e65;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #776e65;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bbada0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add box shadow to the score */
+    color: white;
+}
+
+hr {
+    width: 500px;
+}
+
+#board {
+    width: 400px;
+    height: 400px;
+    background-color: #cdc1b5;
+    border: 6px solid #bbada0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.tile {
+        width: 90px;
+        height: 90px;
+        border: 5px solid #bbada0;
+        font-size: 40px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+
+/* colored tiles */
+
+.x2 {
+    background-color: #eee4da;
+    color: #727371;
+}
+
+.x4 {
+    background-color: #ece0ca;
+    color: #727371;
+}
+
+.x8 {
+    background-color: #f4b17a;
+    color: white;
+}
+
+.x16{
+    background-color: #f59575;
+    color: white;
+}
+
+.x32{
+    background-color: #f57c5f;
+    color: white;
+}
+
+.x64{
+    background-color: #f65d3b;
+    color: white;
+}
+
+.x128{
+    background-color: #edce71;
+    color: white;
+}
+
+.x256{
+    background-color: #edcc63;
+    color: white;
+}
+
+.x512{
+    background-color: #edc651;
+    color: white;
+}
+
+.x1024{
+    background-color: #eec744;
+    color: white;
+}
+
+.x2048{
+    background-color: #ecc230;
+    color: white;
+}
+
+.x4096 {
+    background-color: #fe3d3d;
+    color: white;
+}
+
+.x8192 {
+    background-color: #ff2020;
+    color: white;
+}
+
+button {
+    background-color: #f65d3b; 
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #f57c5f; 
+    transform: scale(1.05); 
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #f57c5f;
+}
+
+#gameOverMessage {
+    margin-top: 20px;
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+}
+
